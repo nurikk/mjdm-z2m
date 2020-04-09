@@ -2,16 +2,18 @@
   "name": "mjdm-z2m",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3797",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "http-server": "^0.12.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-habitat": "^1.0.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:mock": "http-server ./api-mocks -p 3797",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
