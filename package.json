@@ -7,16 +7,18 @@
     "axios": "^0.19.2",
     "http-server": "^0.12.1",
     "react": "^16.13.1",
+    "react-app-rewire-disable-chunks": "0.0.1",
+    "react-app-rewired": "^2.1.5",
     "react-dom": "^16.13.1",
     "react-habitat": "^1.0.1",
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-app-rewired start",
     "start:mock": "http-server ./api-mocks -p 3797",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +34,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "config-overrides-path": "node_modules/react-app-rewire-disable-chunks"
 }
